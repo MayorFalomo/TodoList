@@ -1,0 +1,22 @@
+.dataCard h2{
+    padding: 20px 10px;
+}
+
+.dataCard{
+    width: 80%;
+    margin:auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: space-between;
+}
+
+@media(max-width: 450px){
+    .dataCard{
+        width: 95%;
+    }
+    .flexBtn button{
+        font-size: 15px;
+        padding: 3px 6px;
+    }
+   
+}

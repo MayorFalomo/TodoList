@@ -1,0 +1,199 @@
+.inputCard{
+    position: relative;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.todoHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.outLineBtn{
+    background-color: #5969FE;
+    color: #fff;
+    border: none;
+    border-radius: 70px;
+    padding:10px 20px;
+    font-size: 20px;
+}
+
+.inputText{
+    width: 90%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #292945;
+    color: #fff;
+}
+
+.inputText::placeholder{
+    color: #fff;
+}
+
+.line.active{
+    text-decoration: line-through;
+    transition: 0.5s ease;
+}
+#dark .line.active{
+    text-decoration: black line-through;
+}
+
+#dark .line{
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#dark .heading h1{
+    color: #fff;
+}
+
+.flexBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+.flexBtn button{
+    padding: 7px 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+li button{
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+    padding: 10px 20px;
+}
+#dark .navBar li .link{
+    color: #fff;
+}
+
+.link.active{
+    border-bottom: 1px #5969FE solid;
+}
+
+.toggleContain{
+    border:1px black solid;
+    border-radius:20px;
+    width:50px;
+    height:23px;
+    position:relative;
+    opacity: 0.5;
+}
+
+#dark .toggleContain{
+    background-color: #292945;
+}
+
+.ball{
+    border-radius: 50%;
+    background-color:black;
+    width: 21px;
+    height:20px;
+    position: absolute;
+    bottom: 1.7px;
+    left:2px;
+    transition: 0.5s ease;
+    z-index: 99999999999;
+}
+
+#dark .ball{
+    background-color: #fff;
+}
+
+.ball.active{
+    transform:translateX(25px);
+    transition: all 0.5s ease;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.heading h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.flexTasks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.flexItem{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    width: 100%;
+    font-size: 27px;
+}
+
+.flexItem .EditInput{
+    padding: 10px 20px;
+}
+
+.contentFlex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    width: 90%;
+}
+#dark .liner{
+    color: #fff;
+}
+
+.positionBtn{
+    position: relative;
+    z-index: 9;
+}
+
+.flexBtn p{
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    background-color: #fff;
+    z-index: 9;
+    display: none;
+}
+
+@media(max-width: 450px){
+    .outLineBtn{
+        font-size: 15px;
+    }
+    .inputCard{
+    width: 90%;
+    }
+}
