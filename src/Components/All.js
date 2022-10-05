@@ -54,7 +54,7 @@ const All = ({ todos, setTodos, todoEditing, setTodoEditing, editingText, setEdi
                           )} 
                       
                       <div className='flexBtn'>
-                          <div className='positionBtn' ><button onClick={() => deleteTodo(todo.id)} >{ <MdDelete />}</button><p className='deleteHover' >delete </p> </div>
+                          <div className='positionBtn' ><button onClick={() => deleteTodo(todo.id)} >{ <MdDelete />}</button> </div>
                           
                           {todoEditing === todo.id ? (<button onClick={() => editTodo(todo.id)} >Submit</button>) :
                                       (<div><button onClick={() => setTodoEditing(todo.id)} > {<AiFillEdit />}</button></div>)
